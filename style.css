@@ -1,0 +1,36 @@
+
+
+body {
+	background: teal
+}
+
+#wrapper {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	font-size: 100px;
+	text-align: center;
+	margin: 0;
+}
+
+#container {
+	display: grid;
+	float: center;
+	border: 6px solid black;
+	border-radius: 4px;
+	margin-top: 4%;
+	grid-template-rows: repeat(var(--grid-rows), 1fr);
+	grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.cell {
+	width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+	background: whitesmoke;
+	border: .5px solid rgba(0, 0, 0, 0.8);
+}
+
