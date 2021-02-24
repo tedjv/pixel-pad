@@ -19,6 +19,8 @@ header {
 #container {
 	display: grid;
 	float: center;
+	width: 540px;
+	height: 580px;
 	border: 6px solid black;
 	border-radius: 4px;
 	margin-top: 4%;
@@ -31,6 +33,5 @@ header {
     padding-bottom: 100%;
     position: relative;
 	background: whitesmoke;
-	border: .5px solid rgba(0, 0, 0, 0.8);
+	border: 1px solid black;
 }
-
