@@ -1,8 +1,7 @@
 body {
-	/*background-image: url(icons/bluegreenpixels.jpg);*/
 	background-color: darkslategray;
- 	
 }
+
 #wrapper {
 	display: grid;
 	justify-content: center;
@@ -10,16 +9,16 @@ body {
 	margin: 0;
 }
 
-/*header {
+header {
 	display: grid;
 	margin-left: 20%;
 	font-family: 'DotGothic16', sans-serif;
+	color: whitesmoke;
 	font-size: 70px;
 	font-weight: 600;
-	text-decoration-line: underline;
+	text-shadow: 6px 1px slategray;
 	text-align: center;
 }
-*/
 
 #tools {
 	display: grid;
@@ -39,7 +38,7 @@ body {
 	grid-row: 2;
 	margin-left: 10%;
 	width: 520px;
-	height: 568px;
+	height: 520px;
 	border: 6px solid black;
 	border-radius: 4px;
 	margin-top: 4%;
@@ -49,7 +48,6 @@ body {
 
 .cell {
 	width: 100%;
-    padding-bottom: 100%;
     position: relative;
 	background: whitesmoke;
 	border: 1px solid black;

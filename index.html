@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Pixel-Pad</title>
+    <title>Pixel Pad</title>
     <meta name="description" content="Pixel-Pad">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,12 +14,12 @@
 
 <body>
     <div id="wrapper">
-        <header></header>
+        <header>Pixel Pad</header>
         <div id="tools">
             <input type="color" id="paletteColor" style='opacity:0;width:100px;height:100px;position:absolute;' />
             <button><img src="icons/paint-palette.png"></button>
             <button id="erase"><img src="icons/eraser.png"></button>
-            <button><img src="icons/ruler.png"></button>
+            <button onclick="resize()"><img src="icons/ruler.png"></button>
             <button onclick="clearGrid()" id="clear"><img src="icons/garbage.png"></button>
         </div>
         <div id="container"></div>

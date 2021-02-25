@@ -35,7 +35,7 @@ function makeCells(rows, cols) {
 //clear grid by coloring all cells white
 function clearGrid() {
   let cell = container.children;
-  for (i = 0; i < 1000; i++) {
+  for (i = 0; i < 4096; i++) {
     cell[i].style.backgroundColor = "whitesmoke";
   }
 }
@@ -48,9 +48,11 @@ function removeAllChildNodes(parent) {
 }
 
 //resize grid by removing all cells then generating a new set
-function resize(rows, cols) {
+function resize() {
+  val = prompt("Enter a number of rows 1-64, this will resize the grid: ");
+  parseInt(val);
   removeAllChildNodes(container);
-  makeCells(rows, cols);
+  makeCells(val, val);
 }
 
 //generate initial grid size
