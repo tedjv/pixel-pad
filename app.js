@@ -1,6 +1,5 @@
 const container = document.getElementById("container");
 
-
 //make cells by creating and appending divs to the grid container
 function makeCells(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
@@ -33,35 +32,26 @@ function makeCells(rows, cols) {
   }
 };
 
-
-
-/* ideas, stop doing this, start planning on paper
-
- //clear grid 
- document.getElementById("clear").onclick = function () { clearGrid() };
- function clearGrid() {
-   document.querySelectorAll('.cell').setAttribute('style', 'background: whitesmoke');
- }
-
-
-//let eraser = document.getElementById('eraser').value;
-//cell.style.backgroundColor = eraser;
-
-//clear grid
-document.getElementById("clear").onclick = function() {clearGrid()};
-function clearGrid() {
-  cell.style.backgroundColor = "white";
-}*/
-
-//generate initial grid size
-
-
-makeCells(16, 16);
-
+//clear grid by coloring all cells white
 function clearGrid() {
   let cell = container.children;
   for (i = 0; i < 1000; i++) {
-    cell[i].style.backgroundColor = "whitesmoke"; 
+    cell[i].style.backgroundColor = "whitesmoke";
   }
 }
 
+//logic used to remove cells from the DOM
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+}
+
+//resize grid by removing all cells then generating a new set
+function resize(rows, cols) {
+  removeAllChildNodes(container);
+  makeCells(rows, cols);
+}
+
+//generate initial grid size
+makeCells(16, 16);

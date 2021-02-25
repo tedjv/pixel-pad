@@ -13,14 +13,13 @@ body {
 /*header {
 	display: grid;
 	margin-left: 20%;
-	font-family: Arial, Helvetica, sans-serif;
-	border: 6px solid black;
-	background: rebeccapurple;
-	font-size: 90px;
+	font-family: 'DotGothic16', sans-serif;
+	font-size: 70px;
 	font-weight: 600;
+	text-decoration-line: underline;
 	text-align: center;
-	
-}*/
+}
+*/
 
 #tools {
 	display: grid;
