@@ -22,7 +22,7 @@ function makeCells(rows, cols) {
         var color = document.getElementById('paletteColor').value;
         cell.style.backgroundColor = color;
 
-        //erase cells (color white)
+        //erase cells by changing the active color white
         document.getElementById("erase").onclick = function () { eraser() };
         function eraser() {
           document.getElementById('paletteColor').value = "#F5F5F5";
@@ -56,8 +56,7 @@ function resize() {
     removeAllChildNodes(container);
     makeCells(val, val);
   } else {
-    alert("Please enter a number, 1-64")
-    resize();
+    alert("Resize cancelled. Note: You must use a number, 1-64")
   }
 }
 
