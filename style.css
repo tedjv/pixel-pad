@@ -8,19 +8,36 @@ body {
 	display: grid;
 	justify-content: center;
 	align-items: center;
+	margin: 0;
 }
 
 header {
-	font-size: 100px;
+	display: grid;
+	margin-left: 15%;
+	font-size: 80px;
 	text-align: center;
-	margin: 0;
+	
+}
+
+#tools {
+	display: grid;
+	grid-row: 2;
+	background: lightslategrey;
+	margin-left: 5%;
+	grid-column: 2;
+	height: 400px;
+	width: 100px;
+	border: 4px solid black; 
+	border-radius: 4px;
 }
 
 #container {
 	display: grid;
-	float: center;
-	width: 540px;
-	height: 580px;
+	grid-column: 1;
+	grid-row: 2;
+	
+	width: 520px;
+	height: 568px;
 	border: 6px solid black;
 	border-radius: 4px;
 	margin-top: 4%;
@@ -34,4 +51,16 @@ header {
     position: relative;
 	background: whitesmoke;
 	border: 1px solid black;
+	-webkit-user-drag: none;
+}
+
+button {
+	background: lightslategrey;
+	font-size: 1rem;
+	border: 1px solid black;
+}
+
+button:hover {
+	cursor: pointer;
+	
 }
