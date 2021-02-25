@@ -16,11 +16,11 @@
     <div id="wrapper">
         <header>Pixel Pad</header>
         <div id="tools">
-            <input type="color" id="paletteColor" style='opacity:0;width:100px;height:100px;position:absolute;' />
+            <input type="color" id="paletteColor" title="Choose a color" style='opacity:0;width:100px;height:100px;position:absolute;' />
             <button><img src="icons/paint-palette.png"></button>
-            <button id="erase"><img src="icons/eraser.png"></button>
-            <button onclick="resize()"><img src="icons/ruler.png"></button>
-            <button onclick="clearGrid()" id="clear"><img src="icons/garbage.png"></button>
+            <button id="erase" title="Erase"><img src="icons/eraser.png"></button>
+            <button onclick="resize()" title="Resize the grid"><img src="icons/ruler.png"></button>
+            <button onclick="clearGrid()" title="Clear the grid" id="clear"><img src="icons/garbage.png"></button>
         </div>
         <div id="container"></div>
     </div>
