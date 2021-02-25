@@ -47,7 +47,7 @@ function makeCells(rows, cols) {
 //let eraser = document.getElementById('eraser').value;
 //cell.style.backgroundColor = eraser;
 
-clear grid
+//clear grid
 document.getElementById("clear").onclick = function() {clearGrid()};
 function clearGrid() {
   cell.style.backgroundColor = "white";
@@ -57,4 +57,11 @@ function clearGrid() {
 
 
 makeCells(16, 16);
+
+function clearGrid() {
+  let cell = container.children;
+  for (i = 0; i < 1000; i++) {
+    cell[i].style.backgroundColor = "whitesmoke"; 
+  }
+}
 
