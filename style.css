@@ -1,8 +1,6 @@
-
-
 body {
-	background-image: url(icons/bluegreenpixels.jpg);
-	background-color: lightskyblue;
+	/*background-image: url(icons/bluegreenpixels.jpg);*/
+	background-color: darkslategray;
  	
 }
 #wrapper {
@@ -57,6 +55,8 @@ body {
 	background: whitesmoke;
 	border: 1px solid black;
 	-webkit-user-drag: none;
+	font-size: 0px;
+	color: whitesmoke;
 }
 
 button {
