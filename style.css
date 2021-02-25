@@ -51,9 +51,15 @@ header {
     position: relative;
 	background: whitesmoke;
 	border: 1px solid black;
-	-webkit-user-drag: none;
 	font-size: 0px;
 	color: whitesmoke;
+
+	/* prevent dragging of cells */
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 button {
