@@ -51,8 +51,14 @@ function removeAllChildNodes(parent) {
 function resize() {
   val = prompt("Enter a number of rows 1-64, this will resize the grid: ");
   parseInt(val);
-  removeAllChildNodes(container);
-  makeCells(val, val);
+
+  if (val > 0 && val <= 64) {
+    removeAllChildNodes(container);
+    makeCells(val, val);
+  } else {
+    alert("Please enter a number, 1-64")
+    resize();
+  }
 }
 
 //generate initial grid size
