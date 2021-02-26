@@ -22,6 +22,7 @@ header {
 
 #tools {
 	display: grid;
+	position: relative;
 	grid-row: 2;
 	background: lightslategrey;
 	margin-left: 60%;
@@ -34,6 +35,7 @@ header {
 
 #container {
 	display: grid;
+	position: relative;
 	grid-column: 1;
 	grid-row: 2;
 	margin-left: 10%;
