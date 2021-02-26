@@ -6,18 +6,20 @@ body {
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	margin: 0;
+	margin-left: 5%;
+	margin-right: auto;
+
+	
 }
 
 header {
 	display: grid;
-	margin-left: 20%;
 	font-family: 'DotGothic16', sans-serif;
 	color: whitesmoke;
 	font-size: 70px;
 	font-weight: 600;
-	text-shadow: 6px 1px slategray;
-	text-align: center;
+	text-shadow: 4px 1px slategray;
+	justify-content: center;
 }
 
 #tools {
@@ -25,7 +27,7 @@ header {
 	position: relative;
 	grid-row: 2;
 	background: lightslategrey;
-	margin-left: 60%;
+	position: relative;
 	grid-column: 2;
 	height: 400px;
 	width: 100px;
@@ -35,10 +37,9 @@ header {
 
 #container {
 	display: grid;
-	position: relative;
 	grid-column: 1;
 	grid-row: 2;
-	margin-left: 10%;
+	
 	width: 520px;
 	height: 520px;
 	border: 6px solid black;
